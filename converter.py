@@ -1,14 +1,6 @@
-"""
-converter.py
-Converter Module — Octal Calculator Project
-Owner: [Your Name]
-
-Converts between octal and decimal bases.
-"""
-
 from typing import Optional
-import parser  # Member 1's module
-import validator  # Member 2's module
+import parser
+import validator
 
 
 def convert(value: str, from_base: str, to_base: str) -> str:

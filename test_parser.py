@@ -1,7 +1,6 @@
 """
 test_parser.py
 Unit Tests — Input Parser Module, Octal Calculator Project
-Owner: Soumyajit
 
 Run with:
     python -m pytest test_parser.py -v

@@ -1,4 +1,4 @@
-from parser import parse_input  # Member 1's module
+from parser import parse_input
 
 VALID_CHARS: dict[str, set[str]] = {
     'OCT': set('01234567'),

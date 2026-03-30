@@ -3,7 +3,7 @@ test_validator.py
 
 Unit tests for the Validator module.
 
-Member 1's parse_input() is MOCKED here so that tests run independently
+parse_input() is MOCKED here so that tests run independently
 of the Parser module. When the full team integrates, these mocks can be
 removed and replaced with real parser calls in integration tests.
 """
@@ -154,7 +154,7 @@ class TestEdgeCases(unittest.TestCase):
 
 class TestWithMockedParser(unittest.TestCase):
     """
-    Simulates the integration point with Member 1's parse_input().
+    Simulates the integration point with parse_input().
     parse_input() is mocked — these tests do NOT require parser.py to exist.
     """
 

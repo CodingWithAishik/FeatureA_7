@@ -1,7 +1,6 @@
 """
 parser.py
 Input Parser Module — Octal Calculator Project
-Owner: Soumyajit
 
 Parses strings like "O'247" or "D'123" into their components.
 Format: <prefix>'<value>  where prefix is O (octal) or D (decimal).
