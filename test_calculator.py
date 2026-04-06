@@ -28,6 +28,8 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.divide(5, 0)
 
+
+
 # Optional: this allows running the script directly
-    if __name__ == '__main__':
-        unittest.main() #
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

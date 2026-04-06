@@ -52,3 +52,12 @@ def get_complement(value: str, comp_type: int) -> str:
     # 8's complement → 7's complement + 1
     seven_comp = ''.join(str(7 - int(d)) for d in value)
     return octal_add(seven_comp, "1")
+
+
+if __name__ == "__main__":
+    print("Arithmetic module demo")
+    print("----------------------")
+    print(f"octal_add('123', '456') = {octal_add('123', '456')}")
+    print(f"octal_multiply('7', '7') = {octal_multiply('7', '7')}")
+    print(f"get_complement('123', 7) = {get_complement('123', 7)}")
+    print(f"get_complement('123', 8) = {get_complement('123', 8)}")

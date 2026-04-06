@@ -249,3 +249,8 @@ class TestReturnContract:
     def test_failure_has_non_empty_error_string(self, s: str):
         error = parse_input(s)["error"]
         assert isinstance(error, str) and len(error) > 0
+
+
+if __name__ == "__main__":
+    # Allow direct execution: python test_parser.py
+    raise SystemExit(pytest.main([__file__, "-v"]))

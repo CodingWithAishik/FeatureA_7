@@ -46,3 +46,17 @@ def convert(value: str, from_base: str, to_base: str) -> str:
         prefix = 'O'
 
     return f"{prefix}'{result}'"
+
+
+if __name__ == "__main__":
+    print("Converter module demo")
+    print("---------------------")
+    demo_cases = [
+        ("247", "OCT", "DEC"),
+        ("167", "DEC", "OCT"),
+        ("0", "OCT", "DEC"),
+    ]
+
+    for value, src, dst in demo_cases:
+        converted = convert(value, src, dst)
+        print(f"{src} {value} -> {dst}: {converted}")

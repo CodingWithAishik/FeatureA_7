@@ -73,3 +73,16 @@ def validate_input(parsed: dict) -> dict:
         }
 
     return {'is_valid': True, 'error': None}
+
+
+if __name__ == '__main__':
+    print('Validator module demo')
+    print('---------------------')
+    demo_inputs = [
+        {'value': '247', 'base': 'OCT'},
+        {'value': '167', 'base': 'DEC'},
+        {'value': '89', 'base': 'OCT'},
+    ]
+
+    for parsed in demo_inputs:
+        print(f"parsed={parsed} -> {validate_input(parsed)}")

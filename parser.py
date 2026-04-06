@@ -136,3 +136,12 @@ def parse_input(input_str: str) -> dict:
 
     # All checks passed.
     return _success(base_mode, value_part)
+
+
+if __name__ == "__main__":
+    print("Parser module demo")
+    print("------------------")
+    demo_inputs = ["O'247", "D'123", "O'89", "X'77"]
+
+    for raw in demo_inputs:
+        print(f"input={raw!r} -> {parse_input(raw)}")
